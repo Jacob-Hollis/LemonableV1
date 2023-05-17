@@ -23,7 +23,7 @@ export default function App() {
       <StatusBar style="auto" />
       <CitySelectListDropdown/>
       <SearchCityButton title="Let's Go!" />
-      <Text style={styles.homepageBottomText}>Find small businesses near you in 1..2..3</Text>
+      <Text style={styles.homepageBottomText}>The small business search engine.</Text>
     </View>
   );
 }
@@ -36,27 +36,28 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   logo: {
-    width: 453,
-    height: 269,
+    width: 403,
+    height: 219,
   },
   citySearchButton: {
-    paddingTop: '20px',
-    width: "10%"
+    paddingTop: 20,
+    width: 10
   },
   homepageBottomText: 
   {
-    fontSize: '2em',
+    fontSize: 20,
     fontFamily: 'sans-serif',
     color: '#3A5067',
-    fontWeight: 'bold'
+    fontStyle: 'italic',
+    textAlign: 'center',
   },
   searchCitiesText: 
   {
-    fontSize: '1.6em',
+    fontSize: 30,
     fontFamily: 'Arial',
     color: '#3A5067',
-    paddingTop: '20px',
-    paddingBottom: '10px',
+    paddingTop: 20,
+    paddingBottom: 10,
     fontWeight: 'bold'
   },
   parent: {
@@ -71,7 +72,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginTop: 20,
     elevation:3,
-    borderRadius: '10px'
+    borderRadius: 10
   },
   text: {
     fontSize: 16,
