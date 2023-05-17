@@ -23,9 +23,14 @@ const CitySelectListDropdown = () => {
         save="value"
         placeholder="Find Your City"
         notFoundText="No cities found"
+        fontFamily='Arial'
+        boxStyles={{borderRadius:'5px', borderWidth: '3px', paddingLeft: '50px', paddingRight: '50px'}}
+        inputStyles={{fontSize: '1.2em', color: '#3A5067'}}
+        dropdownTextStyles={{fontSize: '1.1em'}}
+        disabledTextStyles={{fontSize: '1.1em'}}
+        disabledItemStyles={{opacity: '0.5', backgroundColor: '#3A5067'}}
     />
   )
-
 };
 
 export default forwardRef((props, ref) => CitySelectListDropdown(props, ref));
